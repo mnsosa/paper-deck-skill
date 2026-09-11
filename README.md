@@ -4,6 +4,8 @@ An agent skill for creating playful, hand-drawn browser presentations with warm 
 
 The style is optimized for conceptual talks, workshops, technical explainers, and internal presentations. Every generated deck is plain HTML, CSS, and JavaScript that opens directly in a browser.
 
+![Paper Deck preview](preview.png)
+
 ## Install
 
 ### OpenCode
