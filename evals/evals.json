@@ -1,0 +1,44 @@
+{
+  "skill_name": "paper-deck",
+  "evals": [
+    {
+      "id": 1,
+      "prompt": "Create an 8-slide browser presentation in Spanish for a non-technical workshop explaining why a machine-learning model needs train, validation, and test datasets. Make the threshold tradeoff visual and save a directly openable HTML deck.",
+      "expected_output": "A responsive Paper Deck presentation with a causal teaching arc, conceptual diagrams, purposeful animation, and train/validation/test distinctions.",
+      "files": [],
+      "assertions": [
+        "The output contains index.html, styles.css, and app.js and opens without a build step.",
+        "The deck contains exactly 8 slide sections with unique data-scene values.",
+        "The visual system uses warm ivory, dark ink, indigo accent, 3px borders, rounded cards, and offset shadows.",
+        "The deck supports keyboard, click, touch, fullscreen, progress, and reduced motion.",
+        "At least one animation communicates a threshold or train-validation-test mechanism rather than decoration."
+      ]
+    },
+    {
+      "id": 2,
+      "prompt": "Armame una presentación web corta para contarle al equipo cómo pasamos de alertas manuales a un pipeline automático. Son 7 slides, tiene que mostrar el antes y después, el flujo de una alerta y un failure mode. No uses imágenes externas.",
+      "expected_output": "A seven-slide Spanish Paper Deck using CSS diagrams, a before/after comparison, a pipeline, and a clear failure mode.",
+      "files": [],
+      "assertions": [
+        "The deck contains exactly 7 slide sections.",
+        "The argument includes a before/after scene, an alert pipeline, and a failure mode.",
+        "No image or media URL is required for the deck to render.",
+        "Most slide titles are claims rather than generic topic labels.",
+        "The deck is usable at desktop and mobile widths."
+      ]
+    },
+    {
+      "id": 3,
+      "prompt": "Build a 10-slide English conference deck about feature flags. The key idea is that release and deployment are separate decisions. Include one concrete outage scenario and finish with three memorable operating rules. Deliver plain HTML/CSS/JS.",
+      "expected_output": "A polished ten-slide English Paper Deck with a feature-flag mechanism, outage scenario, and mantra ending.",
+      "files": [],
+      "assertions": [
+        "The deck contains exactly 10 slide sections.",
+        "The narrative clearly separates deployment from release.",
+        "The outage scenario is concrete and visually represented.",
+        "The final slide contains three short parallel operating rules.",
+        "The implementation uses plain HTML, CSS, and JavaScript with no build tool."
+      ]
+    }
+  ]
+}

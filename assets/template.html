@@ -1,0 +1,80 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fffdf6">
+  <title>Paper Deck</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="deck-shell">
+    <header class="topbar">
+      <div class="brand">Paper · Deck</div>
+      <div class="progress" aria-hidden="true"><div id="progressBar"></div></div>
+      <div id="counter" class="counter" aria-live="polite">1 / 6</div>
+    </header>
+
+    <main id="deck" class="deck">
+      <section class="slide title-slide" data-scene="intro">
+        <div class="scribble" aria-hidden="true">✦</div>
+        <p class="eyebrow" data-anim>A short visual argument</p>
+        <h1 data-anim>Make one strong promise</h1>
+        <p class="subtitle" data-anim>Explain what the audience will see differently by the end.</p>
+        <div class="mini-flow" data-anim><span>question</span><i>→</i><span>insight</span><i>→</i><span>action</span></div>
+      </section>
+
+      <section class="slide" data-scene="three-step">
+        <h2>Three beats are enough</h2>
+        <div class="three-cards">
+          <div class="card" data-anim><b>1</b><span>See it</span><small>start with the concrete</small></div>
+          <div class="card" data-anim><b>2</b><span>Name it</span><small>give the pattern a name</small></div>
+          <div class="card" data-anim><b>3</b><span>Use it</span><small>end with a decision</small></div>
+        </div>
+      </section>
+
+      <section class="slide question-slide" data-scene="question">
+        <h2>Introduce the tension</h2>
+        <p data-anim>What changes when the obvious answer stops working?</p>
+      </section>
+
+      <section class="slide" data-scene="pipeline">
+        <h2>Show the mechanism, not a bullet list</h2>
+        <div class="flow-diagram">
+          <div class="node" data-anim>signal</div>
+          <div class="arrow" data-anim>→</div>
+          <div class="node accent-card" data-anim>decision</div>
+          <div class="arrow" data-anim>→</div>
+          <div class="node" data-anim>outcome</div>
+        </div>
+        <p class="speaker-hint" data-anim>Motion should reveal order or causality.</p>
+      </section>
+
+      <section class="slide" data-scene="comparison">
+        <h2>Make the tradeoff visible</h2>
+        <div class="side-by-side">
+          <div data-anim><b>Before</b><span>busy, slow, uncertain</span></div>
+          <div class="equals" data-anim>→</div>
+          <div class="accent-card" data-anim><b>After</b><span>clear, fast, deliberate</span></div>
+        </div>
+      </section>
+
+      <section class="slide mantra-slide" data-scene="closing">
+        <h2>Close with language people can repeat</h2>
+        <div class="mantra" data-anim>
+          <span>One idea</span>
+          <span>One scene</span>
+          <span>One consequence</span>
+        </div>
+      </section>
+    </main>
+
+    <nav class="nav-help" aria-label="Presentation controls">
+      <span>← / →</span><span>Space</span><span>F fullscreen</span>
+    </nav>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.2/anime.min.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
